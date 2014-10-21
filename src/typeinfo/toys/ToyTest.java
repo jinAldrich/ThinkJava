@@ -53,9 +53,19 @@ public class ToyTest {
 		Class up = c.getSuperclass();
 		//Class up = c.getSuperclass().getSuperclass();
 		Object obj = null;
+		Object obj1 = null;
+		Object obj2 = null;
+		Object obj3 = null;
 		try {
 			// Requires default constructor:
 			obj = up.newInstance();
+			obj1 = up.newInstance();
+			obj2 = up.newInstance();
+			obj3 = up.newInstance();
+			System.out.println("obj: " + obj);
+			System.out.println("obj1: " + obj1);
+			System.out.println("obj2: " + obj2);
+			System.out.println("obj3: " + obj3);
 		} catch (InstantiationException e) {
 			print("Cannot instantiate");
 			System.exit(1);
