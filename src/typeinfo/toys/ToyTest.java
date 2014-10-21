@@ -31,8 +31,7 @@ class FancyToy extends Toy implements HasBatteries, Waterproof, Shoots {
 
 public class ToyTest {
 	static void printInfo(Class cc) {
-		print("Class name: " + cc.getName() + " is interface? ["
-				+ cc.isInterface() + "]");
+		print("Class name: " + cc.getName() + " is interface? [" + cc.isInterface() + "]");
 		print("Simple name: " + cc.getSimpleName());
 		print("Canonical name : " + cc.getCanonicalName());
 		print("\n");
@@ -52,6 +51,7 @@ public class ToyTest {
 			printInfo(face);
 		System.out.println("============================");
 		Class up = c.getSuperclass();
+		//Class up = c.getSuperclass().getSuperclass();
 		Object obj = null;
 		try {
 			// Requires default constructor:
