@@ -21,8 +21,8 @@ public class SweetShop {
     new Candy();
     print("After creating Candy");
     try {
-      //Class.forName("typeinfo.Gum");
-    	Class.forName("Gum");
+      Class.forName("typeinfo.Gum");
+      //Class.forName("Gum");
     } catch(ClassNotFoundException e) {
       print("Couldn't find Gum");
     }
