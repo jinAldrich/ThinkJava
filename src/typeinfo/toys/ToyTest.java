@@ -12,6 +12,8 @@ interface Waterproof {
 
 interface Shoots {
 }
+interface Ceil {
+}
 
 class Toy {
 	// Comment out the following default constructor
