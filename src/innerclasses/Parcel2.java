@@ -32,6 +32,7 @@ public class Parcel2 {
     // Defining references to inner classes:
     Parcel2.Contents c = q.contents();
     Parcel2.Destination d = q.to("Borneo");
+    System.out.println(d.readLabel());
   }
 } /* Output:
 Tasmania
