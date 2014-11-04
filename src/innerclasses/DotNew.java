@@ -7,5 +7,6 @@ public class DotNew {
   public static void main(String[] args) {
     DotNew dn = new DotNew();
     DotNew.Inner dni = dn.new Inner();
+    DotNew.Inner dnin = new DotNew().new Inner();
   }
 } ///:~
